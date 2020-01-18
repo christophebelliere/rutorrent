@@ -29,13 +29,13 @@
 ### build
 
 ```sh
-docker build -t mondedie/rutorrent:latest https://github.com/mondediefr/docker-rutorrent.git
+docker build -t christophebe/rutorrent:latest https://github.com/christophebelliere/rutorrent.git
 ```
 
 ### Build with arguments
 
 ```sh
-docker build -t mondedie/rutorrent:filebot --build-arg FILEBOT=true https://github.com/mondediefr/docker-rutorrent.git
+docker build -t christophebe/rutorrent:filebot --build-arg FILEBOT=true https://github.com/christophebelliere/rutorrent.git
 ```
 
 ## Configuration
@@ -95,7 +95,7 @@ docker run --name rutorrent -dt \
   -p 45000:45000 \
   -v /mnt/docker/rutorrent/config:/config \
   -v /mnt/docker/rutorrent/data:/data \
-  mondedie/rutorrent:latest
+  christophebe/rutorrent:latest
 ```
 
 URL: http://xx.xx.xx.xx:8080
@@ -124,7 +124,7 @@ docker run --name rutorrent -dt \
   -p 6881:6881/udp \
   -v /mnt/docker/rutorrent/config:/config \
   -v /mnt/docker/rutorrent/data:/data \
-  mondedie/rutorrent:filebot
+  christophebe/rutorrent:filebot
 ```
 
 URL: http://xx.xx.xx.xx:9080
@@ -141,7 +141,7 @@ docker run --name rutorrent -dt \
   -p 46000:46000 \
   -v /mnt/docker/rutorrent/config:/config \
   -v /mnt/docker/rutorrent/data:/data \
-  mondedie/rutorrent:latest
+  christophebe/rutorrent:latest
 ```
 
 Generate your password:
@@ -156,6 +156,3 @@ Password was generated for the http user: torrent
 
 URL: http://xx.xx.xx.xx:8080
 
-## License
-
-Docker image [mondedie/rutorrent](https://hub.docker.com/r/mondedie/rutorrent) is released under [MIT License](https://github.com/mondediefr/docker-rutorrent/blob/master/LICENSE).
