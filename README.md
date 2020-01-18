@@ -1,11 +1,3 @@
-# mondedie/rutorrent
-
-[![Build Status](https://travis-ci.com/mondediefr/docker-rutorrent.svg?branch=master)](https://travis-ci.com/mondediefr/docker-rutorrent)
-[![](https://img.shields.io/docker/pulls/mondedie/rutorrent)](https://hub.docker.com/r/mondedie/rutorrent)
-[![](https://img.shields.io/docker/stars/mondedie/rutorrent)](https://hub.docker.com/r/mondedie/rutorrent)
-
-Github repository: https://github.com/mondediefr/docker-rutorrent
-
 ## Features
 
  - Multi-platform image: linux/amd64, linux/arm64/v8
