@@ -12,5 +12,5 @@ TORRENT_NAME="${2}"
   -non-strict \
   --log-file /tmp/filebot-amc.log \
   --def @/filebot/args_amc.txt \
-  --def ut_dir="${TORRENT_PATH}" \
-  --def ut_title="${TORRENT_NAME}" 2>> /tmp/filebot-error.log
+  --def "ut_dir=$TORRENT_PATH" \
+  --def "ut_title=$TORRENT_NAME" 2>> /tmp/filebot-error.log
