@@ -4,10 +4,6 @@ TORRENT_PATH="$1"
 TORRENT_NAME="$2"
 TORRENT_LABEL="$(echo $3 | tr '[:upper:]' '[:lower:]')"
 
-echo $TORRENT_PATH
-echo $TORRENT_NAME
-echo $TORRENT_LABEL
-
 /filebot/filebot.sh \
   --lang "${FILEBOT_LANG}" \
   -script fn:amc \
