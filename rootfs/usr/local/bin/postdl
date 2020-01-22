@@ -2,6 +2,11 @@
 
 TORRENT_PATH="$1"
 TORRENT_NAME="$2"
+TORRENT_LABEL="$(echo $3 | tr '[:upper:]' '[:lower:]')"
+
+echo $TORRENT_PATH
+echo $TORRENT_NAME
+echo $TORRENT_LABEL
 
 /filebot/filebot.sh \
   --lang "${FILEBOT_LANG}" \
@@ -13,4 +18,5 @@ TORRENT_NAME="$2"
   --log-file /tmp/filebot-amc.log \
   --def @/filebot/args_amc.txt \
   --def "ut_dir=$TORRENT_PATH" \
+  --def "ut_kind=multi"
   --def "ut_title=$TORRENT_NAME" 2>> /tmp/filebot-error.log
