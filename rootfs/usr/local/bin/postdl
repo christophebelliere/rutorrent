@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
-TORRENT_PATH="${1}"
-TORRENT_NAME="${2}"
+TORRENT_PATH="$1"
+TORRENT_NAME="$2"
 
 /filebot/filebot.sh \
   --lang "${FILEBOT_LANG}" \
