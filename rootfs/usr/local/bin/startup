@@ -143,7 +143,7 @@ if [ -e /filebot/filebot.sh ]; then
   fi
 
   if [ -z "$(grep ^method.set_key.*event.download.finished,filebot /home/torrent/.rtorrent.rc)" ]; then
-    echo 'method.set_key = event.download.finished,filebot,"execute2=/usr/local/bin/postdl,$d.directory=,$d.name="' >> /home/torrent/.rtorrent.rc
+    echo 'method.set_key = event.download.finished,filebot,"execute2=/usr/local/bin/postdl,$d.base_path=,$d.name=,$d.custom1="' >> /home/torrent/.rtorrent.rc
   fi
 
   if [ -z "$(grep ^method.set_key.*event.download.erased,filebot_cleaner /home/torrent/.rtorrent.rc)" ]; then
